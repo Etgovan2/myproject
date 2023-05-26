@@ -1,0 +1,131 @@
+.menu .box-container{
+    width: 90%;
+    padding: 0px;
+    background:transparent;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 110px;
+}
+.menu .box-container .box{
+    width: 250px;
+    height: 300px;
+    background: darkgreen;
+    margin: 0px 10px;
+    transition: 1s;
+}
+
+.menu .box-container .box img{
+    height: 300px;
+    width: 250px;
+}
+.menu .box-container p{
+    color: #011627;
+}
+
+/* ana */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+li,a,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 10%;
+    background:darkgreen;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.one{
+    list-style: none;
+    background: darkgreen;
+}
+.one li {
+
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+    background-color: darkgreen;
+}
+.one li a{
+    transition: all 0.3s ease 0s;
+    background-color: darkgreen;
+}
+.one li a:hover{
+    color: black;
+    text-shadow: 1px 1px;
+}
+.btn1{
+    margin-right:5px;
+    margin-left: 240px;
+    padding: 3px 4px;
+    background-color:white;
+    color: darkgreen;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;;
+}
+.btn1:active{
+    box-shadow: 3px 3px 9px #ffffff ;
+}
+.btn1:hover{
+    background: white;
+    color: black;
+    text-shadow: 1px 1px;
+}
+
+.btn2{
+    margin-left: 5px;
+    padding: 3px 6px;
+    background-color: white;
+    color: darkgreen;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+.btn2:active{
+    box-shadow: 3px 3px 9px #ffffff ;
+}
+.btn2:hover{
+    background: white;
+    color: black;
+    text-shadow: 1px 1px;
+}
+.two{
+    list-style: none;
+    background: white;
+}
+.two li {
+
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+    background-color: white;
+}
+
+.two li a{
+    transition: all 0.3s ease 0s;
+    background-color: white;
+    color: black;
+    margin-left: 80px;
+}
+.two li a:hover{
+    color: darkgreen;
+    text-shadow: 1px 1px;
+
+}

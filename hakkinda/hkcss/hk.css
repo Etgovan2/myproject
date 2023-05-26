@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	box-sizing: border-box;
+}
+
+li,a,button{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 10%;
+	background:darkgreen;
+}
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+}
+.one{
+	list-style: none;
+	background: darkgreen;
+}
+.one li {
+	
+	display: inline-block;
+	padding: 0px 20px;
+	position: relative;
+	background-color: darkgreen;
+}
+.one li a{
+	transition: all 0.3s ease 0s;
+	background-color: darkgreen;
+}
+.one li a:hover{
+	color: black;
+	text-shadow: 1px 1px;
+}
+.btn1{
+	margin-right:5px;
+	margin-left: 240px;
+	padding: 3px 4px;
+	background-color:white;
+	color: darkgreen;
+	border: none;
+	border-radius: 50px;
+	cursor:pointer;
+	transition: all 0.3s ease 0s;;
+}
+.btn1:active{
+    box-shadow: 3px 3px 9px #ffffff ;
+}
+.btn1:hover{
+	background: white;
+	color: black;
+	text-shadow: 1px 1px;
+}
+
+.btn2{
+	margin-left: 5px;
+	padding: 3px 6px;
+	background-color: white;
+	color: darkgreen;
+	border: none;
+	border-radius: 50px;
+	cursor:pointer;
+	transition: all 0.3s ease 0s;
+}
+.btn2:active{
+    box-shadow: 3px 3px 9px #ffffff ;
+}
+.btn2:hover{
+	background: white;
+	color: black;
+	text-shadow: 1px 1px;
+}
+.two{
+	list-style: none;
+	background: white;
+}
+.two li {
+	
+	display: inline-block;
+	padding: 8px 20px;
+	position: relative;
+	background-color: white;
+}
+
+.two li a{
+	transition: all 0.3s ease 0s;
+	background-color: white;
+	color: black;
+	margin-left: 80px;
+}
+.two li a:hover{
+	color: darkgreen;
+	text-shadow: 1px 1px;
+	
+}
+/* menu yazı kısmı */
+.menu .box-container{
+	width: 90%;
+	padding: 0px;
+	background:transparent;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 110px;
+}
+.menu .box-container .box{
+	width: 850px;
+	height: 1240px;
+	background: transparent;
+	margin: 90px 10px;
+	transition: 1s;
+}
+h3.hak{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 27px;
+    font-family:Arial;
+    padding-top: 0px;
+}
+p{
+    font-size: 17px;
+    color:#3e3a3a;
+    font-family:Arial;
+}
+
+/* son */
+footer{
+	background: black;
+	padding: 60px 0 20px 0;
+	color: white;
+}
+.inner_footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 auto;
+	width: 80%;
+	background: black;
+}
+.child_footer{
+	flex-basis:24%;
+	background: black;
+}
+.child_footer h3{
+	margin-bottom: 13px;
+	background: black;
+	font-size: 20px;
+}
+.child_footer .footer_social{
+	display:flex;
+	justify-content: start;
+	margin-top: 10px;
+	background: black;
+}
+.child_footer ul li{
+	flex-basis: 15%;
+	background: black;
+	list-style-type:none;
+}
+.child_footer ul li a{
+	color:white;
+	background: black;
+	font-size: 13px;
+}
+.quick_kurum{
+	display: flex;
+	flex-direction: column;
+}
+.quick_kurum li a:hover{
+	text-decoration: underline;
+}
+.quick_kurum li i{
+	margin-right: 5px;
+	background: black;
+}
+
+.child_footer .footer_guven img{
+	height: 30px;
+	width: 50px;
+	display:flex;
+	background: black;
+}
+.child_footer .footer_social img{
+	height: 30px;
+	width: 30px;
+	display:flex;
+	background: black;
+}
+.iki{
+    margin-left: 9px;
+}
+.uc{
+    margin-left: 9px;
+}
+.footer_yardim{
+	justify-content: start;
+	margin-top: 10px;
+	background: black;
+}
+.footer_guven{
+    display:flex;
+    justify-content: start;
+	margin-top: 10px;
+	background: black;
+}
