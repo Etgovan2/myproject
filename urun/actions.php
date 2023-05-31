@@ -8,7 +8,7 @@ if ($_POST){
 
     $UrunID = $_POST["id"];
 
-    $statement = $db->prepare("SELECT * FROM urun WHERE UrunID =:UrunID");
+    $statement = $db->prepare("SELECT * FROM urun WHERE UrunID =:UrunID ");
     $data = array(
         "UrunID" => $UrunID
     );

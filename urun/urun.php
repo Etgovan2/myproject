@@ -64,12 +64,15 @@ global$db;
 
 include"../Giris/baglan.php";
 
-$query = $db->query("SELECT * FROM urun", PDO::FETCH_ASSOC);
+$urun_id = isset($_GET["urun_id"])  ? $_GET["urun_id"] : 1;
+
+$query = $db->query("SELECT * FROM urun where UrunID=".$urun_id." ", PDO::FETCH_ASSOC);
 $rows = $query->fetchAll();
 
 ?>
 
 <form action="" class="sepetform">
+
     <select name="urun_id" id="urun">
         <?php foreach ($rows as $row) { ?>
         <option value="<?php echo $row["UrunID"];?>"><?php echo $row["urun_renk"]; ?></option>

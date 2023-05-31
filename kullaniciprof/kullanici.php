@@ -78,6 +78,21 @@ include '../Giris/baglan.php';
 
                                 <?php
                             }
+                            ?>
+
+
+                            Telefonunuz:<?php
+                            if(isset($_SESSION["phone"])){
+                                ?>
+
+                                <?=$_SESSION['phone']?>
+
+                                <?php
+                            } else{
+                                ?>
+
+                                <?php
+                            }
                             ?> </p></div>
                     <div class="box"><a href="../proje3/ornek.html" target="_blank" ><img src="Resimler/box1.jpg" alt="" href"https://music.youtube.com/"></a></div>
                     <div class="box"><a href="../proje3/ornek.html" target="_blank" ><img src="Resimler/box1.jpg" alt="" href"https://music.youtube.com/"></a></div>

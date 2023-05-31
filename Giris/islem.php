@@ -49,14 +49,23 @@ if(isset($_POST['kayit'])){
             echo"Şifrenizi giriniz";
         } else {
             $kullanici_sor = $db->prepare('SELECT * FROM users WHERE user_name = ? && user_password = ?');
-            $kullanici_sor->execute([$username,$password]);
+            $sonuc = $kullanici_sor->execute([$username,$password]);
 
            $say = $kullanici_sor->rowCount();
             if($say==1){
 
+
+                $user = $kullanici_sor->fetch(PDO::FETCH_ASSOC);
+                $address = $user['user_address'];
+                $phone = $user['user_phone'];
+
+
                 session_start();
 
                 $_SESSION['username']=$username;
+                $_SESSION['address']= empty($address)  ?  "adress tanımlı değil" :  $address;
+                $_SESSION['phone']= empty($phone)  ?  "telefon tanımlı değil" :  $phone;
+
 
 
                 echo "Başarıyla giriş yaptınız, yönlendiriliyorsunuz";

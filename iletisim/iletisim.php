@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -78,16 +78,36 @@
                 </div>
                 <div class="cont-right">
                     <form action="">
-                        <input type="text" name="text" id="text" placeholder="Adınız Soyadınız">
-                        <input type="email" name="email" id="email" placeholder="E-Posta Adresiniz">
-                        <textarea name="message" id="message" rows="10" placeholder="Mesajınız"></textarea>
-                        <button>GÖNDER</button>
+                        <input type="text" name="adsoyad" placeholder="Adınız Soyadınız">
+                        <input type="email" name="eposta" placeholder="E-Posta Adresiniz">
+                        <textarea name="mesaj" rows="10" placeholder="Mesajınız"></textarea>
+                        <input type="submit"value="Gönder">
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+<?php
+global$baglan;
+global$db;
+
+include"../Giris/baglan.php";
+if (isset($_POST["text"], $_POST["email"], $_POST["message"]))
+{
+	$adsoyad=$_POST["adsoyad"];
+	$eposta=$_POST["eposta"];
+	$mesaj=$_POST["mesaj"];
+
+	$ekle="INSERT INTO iletisim(adsoyad,eposta,mesaj) VALUES ('".$adsoyad."','".$eposta."','".$mesaj."')";
+
+	if ($db->query($ekle)===TRUE)
+	{
+		echo "<script> alert('Mesajınız gönderildi')</script>";
+	}
+}
+
+?>
 
 
 
